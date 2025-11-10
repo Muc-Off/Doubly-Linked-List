@@ -2,7 +2,7 @@
 MEMORY ADDRESS = 1000, VALUE = 45
 head = 1000, *head = 45
 CREATE DOUBLE POINTER **head
-*head = 1000, **head = 2000 (memory address of head)
+*head = 2000, **head = 1000 (memory address of head)
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -140,4 +140,5 @@ void free_list(struct node **head)
         free(temp);
     }
     *head = NULL;
+
 }
